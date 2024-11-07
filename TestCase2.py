@@ -26,7 +26,7 @@ def test_home_page():
 
         # 5. Verify 'New User Signup!' is visible
         check_title = driver.find_element(By.XPATH, "//*[text()='Login to your account']")
-        assert check_title.is_displayed(), "New User Signup is not visible"
+        assert check_title.is_displayed(), "Login to your account is not visible"
 
         # 6. Enter correct email address and password
         email_input = driver.find_element(By.CSS_SELECTOR, "[data-qa='login-email']")
